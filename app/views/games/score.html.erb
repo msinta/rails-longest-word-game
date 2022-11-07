@@ -1,0 +1,9 @@
+<h1>Score</h1>
+
+<p>******** Results ********</p>
+<p><strong>Your Word:</strong> <%= params[:word].capitalize %> </p>
+<p><strong>Time Taken to Answer:</strong> <%= @results[:time]%> seconds </p>
+<p><strong>Message:</strong> <%=@message%> </p>
+
+<p>***********************</p>
+<p><%= link_to 'New Game?', new_path, class: 'btn btn-info'  %></p>
